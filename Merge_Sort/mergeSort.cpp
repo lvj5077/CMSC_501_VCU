@@ -58,7 +58,7 @@ int main()
 		a[i]=rand()% 20;
 		cout<<a[i]<<" ";
 	}
-	cout<<"~~~~~~~~~~~~~~~~~"<<endl;
+	cout<<endl<<"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"<<endl;
 
 	MergeSort(a,10);
 
@@ -66,5 +66,6 @@ int main()
 	{
 		cout<<a[i]<<" ";
 	}
+	
 	return 0;
 }
