@@ -82,7 +82,7 @@ int main()
 	}
 	cout<<endl<<"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"<<endl;
 
-	MergeSort(a,10);
+	MergeSort(a,10`
 
 	for(i=0;i<10;i++)
 	{

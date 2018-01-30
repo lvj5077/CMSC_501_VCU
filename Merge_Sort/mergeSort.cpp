@@ -28,6 +28,7 @@ void mergearray(int a[], int first, int mid, int last, int temp[])
 	for (i = 0; i < k; i++)
 		a[first + i] = temp[i];
 }
+
 void mergesort(int a[], int first, int last, int temp[])
 {
 	if (first < last)
@@ -44,6 +45,7 @@ bool MergeSort(int a[], int n)
 	int *p = new int[n];
 	if (p == NULL)
 		return false;
+
 	mergesort(a, 0, n - 1, p);
 	delete[] p;
 	return true;
@@ -60,12 +62,14 @@ int main()
 	}
 	cout<<endl<<"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"<<endl;
 
-	MergeSort(a,10);
+
+	int length = (sizeof(a)/sizeof(*a));
+	MergeSort(a,length);
 
 	for(i=0;i<10;i++)
 	{
 		cout<<a[i]<<" ";
 	}
-	
+
 	return 0;
 }
